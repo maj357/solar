@@ -70,6 +70,9 @@ ul {
   -ms-flex-item-align: center;
       align-self: center;
 }
+.button {
+  outline: none;
+}
 .button__text {
   display: inline-block;
   font-size: 18px;

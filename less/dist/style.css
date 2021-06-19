@@ -61,6 +61,9 @@ ul {
   margin-bottom: auto;
   align-self: center;
 }
+.button {
+  outline: none;
+}
 .button__text {
   display: inline-block;
   font-size: 18px;
