@@ -84,6 +84,7 @@ ul {
 
 .button {
   outline: none;
+
   &__text {
     display: inline-block;
     font-size: 18px;
@@ -466,6 +467,7 @@ ul {
       font-size: 14px;
       line-height: 19px;
       color: @white;
+      opacity: 0.5;
     }
   }
 
@@ -486,6 +488,48 @@ ul {
   margin-right: -10px;
 }
 
+// Настройки расположения стрелок слайдера
+
+.clients .slick-arrow {
+  left: 18%;
+}
+
+.clients .slick-right {
+  left: 25%;
+}
+
+.clients .slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 87%;
+  left: 20%;
+}
+
+.clients .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+
+.clients .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 12px;
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.clients .slick-active button {
+  width: 10px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  outline: none;
+}
 
 // Медиа
 
@@ -557,6 +601,10 @@ ul {
       right: 5%;
     }
   }
+
+  .clients .slick-dots {
+    left: 22%;
+  }
 }
 
 @media (max-width:1024px) {
@@ -611,6 +659,10 @@ ul {
       transform: translateY(125%);
       right: 1%;
     }
+  }
+
+  .clients .slick-dots {
+    left: 23%;
   }
 }
 
@@ -728,10 +780,17 @@ ul {
       margin-left: 15%;
     }
   }
+
+  .clients .slick-dots {
+    top: 45%;
+    left: 45%;
+  }
 }
 
 @media (max-width:768px) {
   .header {
+    height: 100%;
+
     &__title {
       font-size: 48px;
       line-height: 56px;
@@ -750,6 +809,28 @@ ul {
       font-size: 28px;
       line-height: 32px;
     }
+  }
+
+  .clients .slick-dots {
+    top: 45%;
+  }
+}
+
+@media (max-width:667px) {
+  .clients .slick-dots {
+    top: 43%;
+  }
+}
+
+@media (max-width:568px) {
+  .step {
+    &__list {
+      width: 100%;
+    }
+  }
+
+  .clients .slick-dots {
+    top: 42%;
   }
 }
 
@@ -936,6 +1017,13 @@ ul {
   }
 }
 
+@media (max-width:414px) {
+  .clients .slick-dots {
+    top: 44%;
+    left: 41%;
+  }
+}
+
 @media (max-width:375px) {
   .info {
     &-slider {
@@ -1066,5 +1154,10 @@ ul {
       font-size: 18px;
       line-height: 25px;
     }
+  }
+
+  .clients .slick-dots {
+    top: 41%;
+    left: 40%;
   }
 }
